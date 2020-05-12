@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
       const videoElement = document.getElementById('videoElement');
       const flvPlayer = flvjs.createPlayer({
           type: 'flv',
-          url: `http://${environment.IPADDR}:4300/live/${environment.STREAMCODE}.flv`
+          url: `http://${environment.IPADDR}:8000/live/${environment.STREAMCODE}.flv`
       });
       flvPlayer.attachMediaElement(videoElement);
       flvPlayer.load();
